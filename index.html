@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega de Comidas e Bebidas</title>
+
+    <!-- Incluindo o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header com logo e categorias -->
+    <header class="header py-3 shadow-sm">
+        <div class="container text-center">
+            <img src="images/logo.png" alt="Logo Entrega" class="img-fluid mb-3">
+            <nav class="nav justify-content-center">
+                <a href="#menu-especial" class="nav-link">Menu Especial</a>
+                <a href="#pizzas" class="nav-link">Pizzas</a>
+                <a href="#hamburgueres" class="nav-link">Hambúrgueres</a>
+                <a href="#bebidas" class="nav-link">Bebidas</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Especial -->
+    <section id="menu-especial" class="special-menu py-5">
+        <div class="container">
+            <h2 class="text-center font-weight-bold mb-4">Menu Especial</h2>
+            <div class="special-offer text-center text-white p-5" style="background-image: url('images/special_offer.jpg'); background-size: cover; background-position: center;">
+                <h3 class="font-weight-bold">Oferta Especial: Combo Família</h3>
+                <p>2 Pizzas Grandes + 1 Refrigerante 2L por apenas € 29,90!</p>
+                <button class="btn btn-outline-light btn-lg order-button" data-product-name="Combo Família" data-product-price="29.90">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Pizzas -->
+    <section id="pizzas" class="products py-5">
+        <div class="container">
+            <h2 class="text-center font-weight-bold mb-4">Pizzas</h2>
+            <div class="row">
+                <!-- Produto Pizza Margherita -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/pizza_margherita.jpg" class="card-img-top" alt="Pizza Margherita">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Pizza Margherita</h5>
+                            <p class="card-text text-muted">€ 12,50</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Pizza Margherita" data-product-price="12.50">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Pizza Pepperoni -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/pizza_pepperoni.jpg" class="card-img-top" alt="Pizza Pepperoni">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Pizza Pepperoni</h5>
+                            <p class="card-text text-muted">€ 13,90</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Pizza Pepperoni" data-product-price="13.90">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Pizza Vegetariana -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/pizza_vegetariana.jpg" class="card-img-top" alt="Pizza Vegetariana">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Pizza Vegetariana</h5>
+                            <p class="card-text text-muted">€ 13,50</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Pizza Vegetariana" data-product-price="13.50">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Pizza Quatro Queijos -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/pizza_quatro_queijos.jpg" class="card-img-top" alt="Pizza Quatro Queijos">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Pizza Quatro Queijos</h5>
+                            <p class="card-text text-muted">€ 14,50</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Pizza Quatro Queijos" data-product-price="14.50">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Pizza Calabresa -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/pizza_calabresa.jpg" class="card-img-top" alt="Pizza Calabresa">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Pizza Calabresa</h5>
+                            <p class="card-text text-muted">€ 13,00</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Pizza Calabresa" data-product-price="13.00">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Pizza Frango com Catupiry -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/pizza_frango_catupiry.jpg" class="card-img-top" alt="Pizza Frango com Catupiry">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Pizza Frango com Catupiry</h5>
+                            <p class="card-text text-muted">€ 14,00</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Pizza Frango com Catupiry" data-product-price="14.00">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais pizzas conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Hambúrgueres -->
+    <section id="hamburgueres" class="products py-5">
+        <div class="container">
+            <h2 class="text-center font-weight-bold mb-4">Hambúrgueres</h2>
+            <div class="row">
+                <!-- Produto Hambúrguer Clássico -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/hamburguer_classico.jpg" class="card-img-top" alt="Hambúrguer Clássico">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Hambúrguer Clássico</h5>
+                            <p class="card-text text-muted">€ 8,90</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Hambúrguer Clássico" data-product-price="8.90">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Hambúrguer Cheddar -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/hamburguer_cheddar.jpg" class="card-img-top" alt="Hambúrguer Cheddar">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Hambúrguer Cheddar</h5>
+                            <p class="card-text text-muted">€ 9,90</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Hambúrguer Cheddar" data-product-price="9.90">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Hambúrguer Bacon -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/hamburguer_bacon.jpg" class="card-img-top" alt="Hambúrguer Bacon">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Hambúrguer Bacon</h5>
+                            <p class="card-text text-muted">€ 10,50</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Hambúrguer Bacon" data-product-price="10.50">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Hambúrguer Vegetariano -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/hamburguer_vegetariano.jpg" class="card-img-top" alt="Hambúrguer Vegetariano">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Hambúrguer Vegetariano</h5>
+                            <p class="card-text text-muted">€ 9,50</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Hambúrguer Vegetariano" data-product-price="9.50">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Hambúrguer Picante -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/hamburguer_picante.jpg" class="card-img-top" alt="Hambúrguer Picante">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Hambúrguer Picante</h5>
+                            <p class="card-text text-muted">€ 10,00</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Hambúrguer Picante" data-product-price="10.00">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Hambúrguer de Frango -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/hamburguer_frango.jpg" class="card-img-top" alt="Hambúrguer de Frango">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Hambúrguer de Frango</h5>
+                            <p class="card-text text-muted">€ 9,00</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Hambúrguer de Frango" data-product-price="9.00">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais hambúrgueres conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Bebidas -->
+    <section id="bebidas" class="products py-5">
+        <div class="container">
+            <h2 class="text-center font-weight-bold mb-4">Bebidas</h2>
+
+            <!-- Subcategoria Cervejas -->
+            <h3 class="text-center font-weight-bold mb-4">Cervejas</h3>
+            <div class="row">
+                <!-- Produto Cerveja Pilsen -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/cerveja_pilsen.jpg" class="card-img-top" alt="Super Bock">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Super Bock</h5>
+                            <p class="card-text text-muted">€ 2,00</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Super Bock" data-product-price="2.00">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Cerveja IPA -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/cerveja_ipa.jpg" class="card-img-top" alt="Sagres">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Sagres</h5>
+                            <p class="card-text text-muted">€ 2,00</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Sagres" data-product-price="2.00">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Cerveja Stout -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/cerveja_stout.jpg" class="card-img-top" alt="Super Bock Preta">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Super Bock Preta</h5>
+                            <p class="card-text text-muted">€ 2,00</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Super Bock Preta" data-product-price="2.00">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Cerveja Weiss -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/cerveja_weiss.jpg" class="card-img-top" alt="Heineken">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Heineken</h5>
+                            <p class="card-text text-muted">€ 2,50</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Heineken" data-product-price="2.50">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais cervejas conforme necessário -->
+            </div>
+
+            <!-- Subcategoria Águas -->
+            <h3 class="text-center font-weight-bold mb-4">Água</h3>
+            <div class="row">
+                <!-- Produto Água Mineral -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/agua.jpg" class="card-img-top" alt="Água Mineral">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Água Mineral</h5>
+                            <p class="card-text text-muted">€ 1,50</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Água Mineral" data-product-price="1.50">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Água com Gás -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/agua_com_gas.jpg" class="card-img-top" alt="água Castelo">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">água Castelo</h5>
+                            <p class="card-text text-muted">€ 2,00</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="água Castelo" data-product-price="2.00">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais águas conforme necessário -->
+            </div>
+
+            <!-- Subcategoria Sumos -->
+            <h3 class="text-center font-weight-bold mb-4">Sumos</h3>
+            <div class="row">
+                <!-- Produto Sumo de Laranja -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/sumo_laranja.jpg" class="card-img-top" alt="Coca-Cola">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Coca-Cola</h5>
+                            <p class="card-text text-muted">€ 3,00</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Coca-Cola" data-product-price="3.00">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Sumo de Uva -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/sumo_uva.jpg" class="card-img-top" alt="Sumol Ananás">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Sumol Ananás</h5>
+                            <p class="card-text text-muted">€ 2,50</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Sumol Ananás" data-product-price="2.50">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Sumo de Maçã -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/sumo_maca.jpg" class="card-img-top" alt="Sumol Laranja">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Sumol Laranja</h5>
+                            <p class="card-text text-muted">€ 2,20</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Sumol Laranja" data-product-price="2.20">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Sumo de Abacaxi -->
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/sumo_abacaxi.jpg" class="card-img-top" alt="Fanta Laranja">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title">Fanta Laranja</h5>
+                            <p class="card-text text-muted">€ 2,30</p>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Fanta Laranja" data-product-price="2.30">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais sumos conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão para abrir o carrinho -->
+    <div class="fixed-bottom text-right mb-3 mr-3">
+        <button id="open-cart" class="btn btn-primary btn-lg">
+            <i class="fas fa-shopping-cart"></i> Carrinho (<span id="cart-count">0</span>)
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-white text-center py-4">
+        <p>&copy; 2024 Entrega de Comidas. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modais -->
+
+    <!-- Modal do Produto -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productModalLabel">Detalhes do Produto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="selected-product-name" class="font-weight-bold"></p>
+            <p id="selected-product-price"></p>
+            <div class="form-group">
+              <label for="special-instructions">Instruções Especiais</label>
+              <textarea class="form-control" id="special-instructions" placeholder="Exemplo: Sem pimenta / açúcar / sal, por favor."></textarea>
+            </div>
+            <div class="form-group">
+              <label>Quantidade</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button" id="quantity-decrease">-</button>
+                </div>
+                <input type="text" class="form-control text-center" id="quantity" value="1" readonly>
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="quantity-increase">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal do Carrinho -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">O Seu Carrinho</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="cart-items">
+                <!-- Itens do carrinho serão inseridos aqui -->
+            </div>
+            <div id="cart-total" class="text-right font-weight-bold">
+                <!-- Total do carrinho -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="proceed-to-checkout" class="btn btn-success" disabled>Finalizar Pedido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal das Informações do Cliente -->
+    <div class="modal fade" id="clientInfoModal" tabindex="-1" aria-labelledby="clientInfoModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="clientInfoModalLabel">Informações do Cliente</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="client-info-form">
+              <div class="form-group">
+                <label for="client-name">Nome</label>
+                <input type="text" class="form-control" id="client-name" placeholder="O seu nome" required>
+              </div>
+              <div class="form-group">
+                <label for="client-address">Morada</label>
+                <input type="text" class="form-control" id="client-address" placeholder="A sua morada" required>
+              </div>
+              <div class="form-group">
+                <label for="client-phone">Telefone</label>
+                <input type="tel" class="form-control" id="client-phone" placeholder="O seu telefone" required>
+              </div>
+              <div class="form-group">
+                <label for="payment-method">Método de Pagamento</label>
+                <select class="form-control" id="payment-method" required>
+                  <option value="" disabled selected>Escolha uma opção</option>
+                  <option value="MB Way">MB Way</option>
+                  <option value="Dinheiro">Dinheiro</option>
+                </select>
+              </div>
+              <!-- Se precisar adicionar mais campos, faça aqui -->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" id="finalize-order">Enviar Pedido pelo WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- jQuery, Popper.js e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Popper.js para Bootstrap 4 -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Script personalizado -->
+    <script>
+        $(document).ready(function() {
+            let cart = [];
+            let currentProduct = {};
+
+            // Manipula o clique no botão "Adicionar ao Carrinho"
+            $('.order-button').click(function() {
+                const productName = $(this).attr('data-product-name');
+                const productPrice = parseFloat($(this).attr('data-product-price'));
+
+                // Reseta as informações do produto atual
+                currentProduct = {
+                    name: productName,
+                    price: productPrice,
+                    quantity: 1,
+                    instructions: ''
+                };
+
+                $('#selected-product-name').text(currentProduct.name);
+                $('#selected-product-price').text('€ ' + currentProduct.price.toFixed(2));
+                $('#special-instructions').val('');
+                $('#quantity').val('1');
+
+                $('#productModal').modal('show');
+            });
+
+            // Aumenta a quantidade
+            $('#quantity-increase').click(function() {
+                currentProduct.quantity++;
+                $('#quantity').val(currentProduct.quantity);
+            });
+
+            // Diminui a quantidade
+            $('#quantity-decrease').click(function() {
+                if (currentProduct.quantity > 1) {
+                    currentProduct.quantity--;
+                    $('#quantity').val(currentProduct.quantity);
+                }
+            });
+
+            // Adiciona o produto ao carrinho
+            $('#add-to-cart').click(function() {
+                currentProduct.instructions = $('#special-instructions').val();
+
+                cart.push({ ...currentProduct }); // Adiciona uma cópia do produto ao carrinho
+
+                $('#productModal').modal('hide');
+
+                updateCartUI();
+            });
+
+            // Atualiza a interface do carrinho
+            function updateCartUI() {
+                const cartItemsContainer = $('#cart-items');
+                const cartTotalContainer = $('#cart-total');
+                cartItemsContainer.empty();
+
+                const cartCount = $('#cart-count');
+                cartCount.text(cart.length);
+
+                if (cart.length === 0) {
+                    cartItemsContainer.html('<p>Nenhum item no carrinho.</p>');
+                    cartTotalContainer.html('');
+                    $('#proceed-to-checkout').prop('disabled', true);
+                    return;
+                }
+
+                const table = $('<table>').addClass('table table-striped');
+
+                const thead = $('<thead>').html(`
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Instruções</th>
+                        <th>Preço</th>
+                        <th></th>
+                    </tr>
+                `);
+                table.append(thead);
+
+                const tbody = $('<tbody>');
+
+                let totalPrice = 0;
+
+                cart.forEach((item, index) => {
+                    const itemTotal = item.price * item.quantity;
+                    totalPrice += itemTotal;
+
+                    const tr = $('<tr>').html(`
+                        <td>${item.name}</td>
+                        <td>${item.quantity}</td>
+                        <td>${item.instructions || '-'}</td>
+                        <td>€ ${itemTotal.toFixed(2)}</td>
+                        <td><button class="btn btn-sm btn-danger remove-item" data-index="${index}">&times;</button></td>
+                    `);
+                    tbody.append(tr);
+                });
+
+                table.append(tbody);
+                cartItemsContainer.append(table);
+                cartTotalContainer.html(`Total: € ${totalPrice.toFixed(2)}`);
+                $('#proceed-to-checkout').prop('disabled', false);
+
+                // Adiciona evento para remover item
+                $('.remove-item').click(function() {
+                    const index = $(this).data('index');
+                    cart.splice(index, 1);
+                    updateCartUI();
+                });
+            }
+
+            // Abre o modal do carrinho
+            $('#open-cart').click(function() {
+                updateCartUI();
+                $('#cartModal').modal('show');
+            });
+
+            // Avança para o modal de informações do cliente
+            $('#proceed-to-checkout').click(function() {
+                $('#cartModal').modal('hide');
+                $('#clientInfoModal').modal('show');
+            });
+
+            // Finaliza o pedido e prepara a mensagem do WhatsApp
+            $('#finalize-order').click(function() {
+                const clientInfoForm = $('#client-info-form');
+
+                if (!clientInfoForm[0].checkValidity()) {
+                    clientInfoForm[0].reportValidity();
+                    return;
+                }
+
+                const clientName = $('#client-name').val();
+                const clientAddress = $('#client-address').val();
+                const clientPhone = $('#client-phone').val();
+                const paymentMethod = $('#payment-method').val();
+
+                let message = `Olá, gostaria de fazer o seguinte pedido:\n\n`;
+
+                let totalPrice = 0;
+
+                cart.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    totalPrice += itemTotal;
+
+                    message += `*Produto*: ${item.name}\n`;
+                    message += `*Preço Unitário*: € ${item.price.toFixed(2)}\n`;
+                    message += `*Quantidade*: ${item.quantity}\n`;
+                    message += `*Subtotal*: € ${itemTotal.toFixed(2)}\n`;
+                    if (item.instructions) {
+                        message += `*Instruções Especiais*: ${item.instructions}\n`;
+                    }
+                    message += `\n`;
+                });
+
+                message += `*Preço Total*: € ${totalPrice.toFixed(2)}\n\n`;
+                message += `*Informações do Cliente*:\n`;
+                message += `*Nome*: ${clientName}\n`;
+                message += `*Morada*: ${clientAddress}\n`;
+                message += `*Telefone*: ${clientPhone}\n`;
+                message += `*Método de Pagamento*: ${paymentMethod}\n`;
+
+                const phoneNumber = '351912345678'; // Substitua pelo número do restaurante em Portugal
+                const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+                window.open(whatsappURL, '_blank');
+
+                $('#clientInfoModal').modal('hide');
+
+                // Limpa o carrinho após o pedido ser finalizado
+                cart = [];
+                updateCartUI();
+            });
+        });
+    </script>
+</body>
+</html>

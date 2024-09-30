@@ -1,0 +1,247 @@
+/* Estilo geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #000000;
+    border-bottom: 1px solid #444;
+    padding: 15px 0;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #fff;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+/* Estilo do Menu Especial */
+.special-menu {
+    background-color: #111;
+}
+
+.special-offer {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 40px;
+    background-blend-mode: overlay;
+}
+
+.special-offer h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.special-offer p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-outline-light {
+    border-radius: 25px;
+    font-weight: 500;
+    color: #fff;
+    border-color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+/* Estilo dos Produtos */
+.products {
+    background-color: #000000;
+    padding: 50px 0;
+}
+
+.products h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.products h3 {
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+    color: #ffcc00;
+}
+
+.card {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+.card img {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    object-fit: cover;
+    height: 180px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.btn-outline-primary {
+    border-radius: 25px;
+    font-weight: 500;
+    color: #ffcc00;
+    border-color: #ffcc00;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ffcc00;
+    color: #222;
+}
+
+/* Botão do Carrinho */
+#open-cart {
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffcc00;
+    border: none;
+    color: #222;
+}
+
+#open-cart:hover {
+    background-color: #e6b800;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+/* Estilo dos Modais */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.close {
+    outline: none;
+}
+
+#quantity {
+    max-width: 60px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #999;
+}
+
+/* Estilo para campos obrigatórios */
+input:required, select:required, textarea:required {
+    border-left: 3px solid #ff0000;
+}
+
+/* Responsividade */
+@media (max-width: 767.98px) {
+    .nav-link {
+        font-size: 12px;
+        margin: 0 8px;
+    }
+
+    .products h2, .products h3 {
+        font-size: 24px;
+    }
+
+    .special-offer h3 {
+        font-size: 28px;
+    }
+
+    .special-offer p {
+        font-size: 18px;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    /* Melhorias para dispositivos móveis */
+    .header, .footer {
+        padding: 10px 0;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #open-cart {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .modal-dialog {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card img {
+        height: 200px;
+    }
+
+    .products .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
