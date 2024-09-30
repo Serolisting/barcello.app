@@ -202,7 +202,7 @@
             <!-- Subcategoria Cervejas -->
             <h3 class="text-center font-weight-bold mb-4">Cervejas</h3>
             <div class="row">
-                <!-- Produto Cerveja Pilsen -->
+                <!-- Produto Super Bock -->
                 <div class="col-6 col-md-4 mb-4">
                     <div class="card shadow-sm h-100">
                         <img src="images/cerveja_pilsen.jpg" class="card-img-top" alt="Super Bock">
@@ -213,7 +213,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Produto Cerveja IPA -->
+                <!-- Produto Sagres -->
                 <div class="col-6 col-md-4 mb-4">
                     <div class="card shadow-sm h-100">
                         <img src="images/cerveja_ipa.jpg" class="card-img-top" alt="Sagres">
@@ -224,7 +224,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Produto Cerveja Stout -->
+                <!-- Produto Super Bock Preta -->
                 <div class="col-6 col-md-4 mb-4">
                     <div class="card shadow-sm h-100">
                         <img src="images/cerveja_stout.jpg" class="card-img-top" alt="Super Bock Preta">
@@ -235,7 +235,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Produto Cerveja Weiss -->
+                <!-- Produto Heineken -->
                 <div class="col-6 col-md-4 mb-4">
                     <div class="card shadow-sm h-100">
                         <img src="images/cerveja_weiss.jpg" class="card-img-top" alt="Heineken">
@@ -263,14 +263,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- Produto Água com Gás -->
+                <!-- Produto Água Castelo -->
                 <div class="col-6 col-md-4 mb-4">
                     <div class="card shadow-sm h-100">
-                        <img src="images/agua_com_gas.jpg" class="card-img-top" alt="água Castelo">
+                        <img src="images/agua_com_gas.jpg" class="card-img-top" alt="Água Castelo">
                         <div class="card-body text-center d-flex flex-column">
-                            <h5 class="card-title">água Castelo</h5>
+                            <h5 class="card-title">Água Castelo</h5>
                             <p class="card-text text-muted">€ 2,00</p>
-                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="água Castelo" data-product-price="2.00">Adicionar ao Carrinho</button>
+                            <button class="mt-auto btn btn-outline-primary btn-block order-button" data-product-name="Água Castelo" data-product-price="2.00">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -280,7 +280,7 @@
             <!-- Subcategoria Sumos -->
             <h3 class="text-center font-weight-bold mb-4">Sumos</h3>
             <div class="row">
-                <!-- Produto Sumo de Laranja -->
+                <!-- Produto Coca-Cola -->
                 <div class="col-6 col-md-4 mb-4">
                     <div class="card shadow-sm h-100">
                         <img src="images/sumo_laranja.jpg" class="card-img-top" alt="Coca-Cola">
@@ -291,7 +291,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Produto Sumo de Uva -->
+                <!-- Produto Sumol Ananás -->
                 <div class="col-6 col-md-4 mb-4">
                     <div class="card shadow-sm h-100">
                         <img src="images/sumo_uva.jpg" class="card-img-top" alt="Sumol Ananás">
@@ -302,7 +302,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Produto Sumo de Maçã -->
+                <!-- Produto Sumol Laranja -->
                 <div class="col-6 col-md-4 mb-4">
                     <div class="card shadow-sm h-100">
                         <img src="images/sumo_maca.jpg" class="card-img-top" alt="Sumol Laranja">
@@ -313,7 +313,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Produto Sumo de Abacaxi -->
+                <!-- Produto Fanta Laranja -->
                 <div class="col-6 col-md-4 mb-4">
                     <div class="card shadow-sm h-100">
                         <img src="images/sumo_abacaxi.jpg" class="card-img-top" alt="Fanta Laranja">
@@ -330,11 +330,9 @@
     </section>
 
     <!-- Botão para abrir o carrinho -->
-    <div class="fixed-bottom text-right mb-3 mr-3">
-        <button id="open-cart" class="btn btn-primary btn-lg">
-            <i class="fas fa-shopping-cart"></i> Carrinho (<span id="cart-count">0</span>)
-        </button>
-    </div>
+    <button id="open-cart" class="btn btn-primary btn-lg cart-button">
+        <i class="fas fa-shopping-cart"></i> Carrinho (<span id="cart-count">0</span>)
+    </button>
 
     <!-- Footer -->
     <footer class="footer text-white text-center py-4">
@@ -382,7 +380,7 @@
 
     <!-- Modal do Carrinho -->
     <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content text-dark">
           <div class="modal-header">
             <h5 class="modal-title" id="cartModalLabel">O Seu Carrinho</h5>
@@ -399,7 +397,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button id="proceed-to-checkout" class="btn btn-success" disabled>Finalizar Pedido</button>
+            <button id="proceed-to-checkout" class="btn btn-success btn-block" disabled>Finalizar Pedido</button>
           </div>
         </div>
       </div>
@@ -631,3 +629,4 @@
     </script>
 </body>
 </html>
+
