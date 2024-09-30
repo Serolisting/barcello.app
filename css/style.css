@@ -127,7 +127,10 @@ body {
 }
 
 /* Botão do Carrinho */
-#open-cart {
+.cart-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     border-radius: 50px;
     padding: 15px 20px;
     font-size: 16px;
@@ -135,10 +138,22 @@ body {
     background-color: #ffcc00;
     border: none;
     color: #222;
+    z-index: 1000;
 }
 
-#open-cart:hover {
+.cart-button:hover {
     background-color: #e6b800;
+}
+
+@media (max-width: 767.98px) {
+    .cart-button {
+        width: 80%;
+        left: 10%;
+        right: 10%;
+        font-size: 18px;
+        padding: 15px;
+        text-align: center;
+    }
 }
 
 /* Rodapé */
@@ -193,7 +208,52 @@ input:required, select:required, textarea:required {
     border-left: 3px solid #ff0000;
 }
 
-/* Responsividade */
+/* Ajustes para o Modal do Carrinho em dispositivos móveis */
+@media (max-width: 767.98px) {
+    .modal-dialog {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .modal-content {
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .modal-header {
+        padding: 15px;
+    }
+
+    .modal-body {
+        overflow-y: auto;
+    }
+
+    .modal-footer {
+        padding: 15px;
+    }
+
+    .modal-title {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+
+    #cart-items table {
+        font-size: 16px;
+    }
+
+    #cart-items table th, #cart-items table td {
+        padding: 10px;
+    }
+
+    #cart-total {
+        font-size: 20px;
+    }
+}
+
+/* Ajustes gerais para dispositivos móveis */
 @media (max-width: 767.98px) {
     .nav-link {
         font-size: 12px;
@@ -226,13 +286,8 @@ input:required, select:required, textarea:required {
         font-size: 14px;
     }
 
-    #open-cart {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-
     .modal-dialog {
-        margin: 10px;
+        margin: 0;
     }
 }
 
